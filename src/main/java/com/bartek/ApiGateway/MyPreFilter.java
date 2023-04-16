@@ -30,7 +30,7 @@ public class MyPreFilter implements GlobalFilter {
 
         headerNames.forEach((headerName) -> {
             String headerValue = headers.getFirst(headerName);
-            logger.info("headerName: " + headerValue);
+            logger.info("Header value: " + headerValue);
         });
 
         return chain.filter(exchange);
